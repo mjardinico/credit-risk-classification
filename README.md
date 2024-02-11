@@ -3,22 +3,22 @@
 * Submitted by:  Michael Jardinico
 * Date Submitted: Feb 10, 2024
 
-### Working Files
+## Working Files
 1. `credit_risk_classification.ipynb`
 2. `/Resources/lending_data.csv`
 
-### Overview of the Analysis
+## Overview of the Analysis
 This project involves assessing credit risk, a crucial aspect for financial institutions when determining the likelihood of a borrower defaulting on a loan. The dataset contains information relevant to this assessment, such as loan size, interest rate, borrower income, debt-to-income ratio, number of accounts, derogatory marks, total debt, and a binary loan status indicating whether the loan was paid or defaulted. The goal of your analysis is to predict the loan status (0 or 1, where 1 might indicate default) based on the other variables.
 
-### Variables to Predict
+## Variables to Predict
 The variable to be predicted is the `loan_status`. This is a binary variable where a value of 0 may indicate the loan was repaid, and 1 a default. Understanding the distribution of the variable `value_counts` is crucial to determine the balance or imbalance between repaid loans and defaults, impacting the preparation of the data and model it. (Refer to the following `value_counts` results based on the dataset)
 
 ![loan_status result](https://github.com/mjardinico/credit-risk-classification/blob/main/Resources/loan_status.png)
 
 
-### Stages of the Machine Learning Process for this analysis.
+## Stages of the Machine Learning Process for this analysis.
 
-__1. Data Splitting:__
+###1. Data Splitting:###
 
     _Step 1:_ Read the `lending_data.csv` data from the Resources folder into a Pandas DataFrame.
 
@@ -31,7 +31,7 @@ __1. Data Splitting:__
     _Step 4:_ Split the data into training and testing datasets by using `train_test_split`.
 
     
-__2. Model Creation, Testing and Evaluation:__
+###2. Model Creation, Testing and Evaluation:###
 
     _Step 1:_ Fit a logistic regression model by using the training data (X_train and y_train).
 
@@ -47,15 +47,15 @@ __2. Model Creation, Testing and Evaluation:__
 
 
     _Step 4:_ Answer the following question.
-    __Question:__ How well does the logistic regression model predict both the 0 (healthy loan) and 1 (high-risk loan) labels?
+    - Question: How well does the logistic regression model predict both the 0 (healthy loan) and 1 (high-risk loan) labels?
 
-__3. Methods Used__
+###3. Methods Used###
     - Data Splitting
     - Logistic Regression including predictions
     - Calculate Accuracy Score and create Confusion Matrix
 
 
-__4. Results__
+###4. Results###
 
 * Machine Learning Model 1 (Using Original Data):
   * Balanced Accuracy Score: 0.9443
@@ -82,6 +82,6 @@ __4. Results__
   ![Classification Report Using Resampled Data](https://github.com/mjardinico/credit-risk-classification/blob/main/Resources/balanced_accuracy_score2.png)
 
 
-### Summary
+## Summary
 
 In summary, the results of the two machine learning models, using the original data and the resampled data indicates that the latter (Machine Learning Model 2 using resampled data) performs much better and could significantly reduce financial risk and is recommended. This model not only improves the ability to identify defaults (with a recall of 1.00 for defaults) but also maintain a high precision, ensuring that identifying a loan as default is minimized.
