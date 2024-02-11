@@ -36,23 +36,35 @@
     _Step 4:_ Split the data into training and testing datasets by using `train_test_split`.
 
     __Create a Logistic Regression Model with the Original Data__
-    git 
+
     _Step 1:_ Fit a logistic regression model by using the training data (X_train and y_train).
 
     _Step 2:_ Save the predictions on the testing data labels by using the testing feature data (X_test) and the fitted model.
     ![Prediction vs Actual](https://github.com/mjardinico/credit-risk-classification/blob/main/Resources/prediction_actual1.png)
 
-    - __Create Scaled DataFrame:__ Construct a DataFrame with the scaled data, ensuring the "coin-id" is set as the index.
-    ![Crypto Currency DataFrame](https://github.com/mjardinico/CryptoClustering/blob/main/Resources/crypto_dataframe1.png) 
+    _Step 3:_ Evaluate the model’s performance by doing the following:
+    - Calculate the accuracy score of the model.
+    - Generate a confusion matrix.
+    - Print the classification report.
+
+    ![Classification Report 1](https://github.com/mjardinico/credit-risk-classification/blob/main/Resources/balanced_accuracy_score1.png)
+
+    _Step 4:_ Answer the following question.
+    __Question:__ How well does the logistic regression model predict both the 0 (healthy loan) and 1 (high-risk loan) labels?
+
+    __Predict a Logistic Regression Model with Resampled Training Data__    
+
+    _Step 1:_ Use the `RandomOverSampler` module from the `imbalanced-learn` library to resample the data. Be sure to confirm that the labels have an equal number of data points
+
+    _Step 2:_ Use the LogisticRegression classifier and the resampled data to fit the model and make predictions.
+
+    _Step 3:_ Evaluate the model’s performance by doing the following:
     
-    - __Elbow Curve:__ Generate an elbow curve to identify the optimal value of k. 
-    ![Elbow Curve](https://github.com/mjardinico/CryptoClustering/blob/main/Resources/elbow_curve.png)
+    - Calculate the accuracy score of the model.
+    - Generate a confusion matrix.
+    - Print the classification report.
 
-    - __Principal Component Analysis (PCA):__ Optimize clusters using PCA.
-    ![PCS DataFrame](https://github.com/mjardinico/CryptoClustering/blob/main/Resources/PCA_DataFrame.png)
-
-    - __Cluster Scatter Plot:__ Create a scatter plot using `hvplot` using `KMeans`
-    ![PCA Scatter Plot](https://github.com/mjardinico/CryptoClustering/blob/main/Resources/cluster_scatterplot1.png)
+    ![Classification Report 2]()
 
 
 `NOTE: Rendering of interactive plots on GitHub is not supported. Use Jupyter Notebook to view interactive plots correctly.`
