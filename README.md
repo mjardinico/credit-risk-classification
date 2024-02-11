@@ -18,44 +18,44 @@ The variable to be predicted is the `loan_status`. This is a binary variable whe
 
 ## Stages of the Machine Learning Process for this analysis.
 
-###1. Data Splitting:###
+### 1. Data Splitting:###
 
-    _Step 1:_ Read the `lending_data.csv` data from the Resources folder into a Pandas DataFrame.
+_Step 1:_ Read the `lending_data.csv` data from the Resources folder into a Pandas DataFrame.
 
-    _Step 2:_ Create the labels set (y) from the “loan_status” column, and then create the features (X) DataFrame from the remaining columns.
+_Step 2:_ Create the labels set (y) from the “loan_status” column, and then create the features (X) DataFrame from the remaining columns.
 
-    ![X DataFramce](https://github.com/mjardinico/credit-risk-classification/blob/main/Resources/X_variable_dataframe.png)
+![X DataFramce](https://github.com/mjardinico/credit-risk-classification/blob/main/Resources/X_variable_dataframe.png)
 
-    _Step 3:_ Check the balance of the labels variable (y) by using the `value_counts` function.
+_Step 3:_ Check the balance of the labels variable (y) by using the `value_counts` function.
 
-    _Step 4:_ Split the data into training and testing datasets by using `train_test_split`.
+_Step 4:_ Split the data into training and testing datasets by using `train_test_split`.
 
     
-###2. Model Creation, Testing and Evaluation:###
+### 2. Model Creation, Testing and Evaluation:###
 
-    _Step 1:_ Fit a logistic regression model by using the training data (X_train and y_train).
+_Step 1:_ Fit a logistic regression model by using the training data (X_train and y_train).
 
-    _Step 2:_ Save the predictions on the testing data labels by using the testing feature data (X_test) and the fitted model.
+_Step 2:_ Save the predictions on the testing data labels by using the testing feature data (X_test) and the fitted model.
 
-    ![Prediction vs Actual](https://github.com/mjardinico/credit-risk-classification/blob/main/Resources/prediction_actual1.png)
-
-
-    _Step 3:_ Evaluate the model’s performance by doing the following:
-    - Calculate the accuracy score of the model.
-    - Generate a confusion matrix.
-    - Print the classification report.
+![Prediction vs Actual](https://github.com/mjardinico/credit-risk-classification/blob/main/Resources/prediction_actual1.png)
 
 
-    _Step 4:_ Answer the following question.
-    - Question: How well does the logistic regression model predict both the 0 (healthy loan) and 1 (high-risk loan) labels?
-
-###3. Methods Used###
-    - Data Splitting
-    - Logistic Regression including predictions
-    - Calculate Accuracy Score and create Confusion Matrix
+_Step 3:_ Evaluate the model’s performance by doing the following:
+- Calculate the accuracy score of the model.
+- Generate a confusion matrix.
+- Print the classification report.
 
 
-###4. Results###
+_Step 4:_ Answer the following question.
+- Question: How well does the logistic regression model predict both the 0 (healthy loan) and 1 (high-risk loan) labels?
+
+### 3. Methods Used###
+- Data Splitting
+- Logistic Regression including predictions
+- Calculate Accuracy Score and create Confusion Matrix
+
+
+### 4. Results###
 
 * Machine Learning Model 1 (Using Original Data):
   * Balanced Accuracy Score: 0.9443
