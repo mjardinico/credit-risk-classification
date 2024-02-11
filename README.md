@@ -28,6 +28,7 @@
     _Step 1:_ Read the `lending_data.csv` data from the Resources folder into a Pandas DataFrame.
 
     _Step 2:_ Create the labels set (y) from the “loan_status” column, and then create the features (X) DataFrame from the remaining columns.
+    ![X DataFramce]()
 
     _Step 3:_ Check the balance of the labels variable (y) by using the `value_counts` function.
 
