@@ -28,7 +28,7 @@
     _Step 1:_ Read the `lending_data.csv` data from the Resources folder into a Pandas DataFrame.
 
     _Step 2:_ Create the labels set (y) from the “loan_status” column, and then create the features (X) DataFrame from the remaining columns.
-    ![X DataFramce]()
+    ![X DataFramce](https://github.com/mjardinico/credit-risk-classification/blob/main/Resources/X_variable_dataframe.png)
 
     _Step 3:_ Check the balance of the labels variable (y) by using the `value_counts` function.
 
@@ -38,6 +38,7 @@
     _Step 1:_ Fit a logistic regression model by using the training data (X_train and y_train).
 
     _Step 2:_ Save the predictions on the testing data labels by using the testing feature data (X_test) and the fitted model.
+    ![Prediction vs Actual](https://github.com/mjardinico/credit-risk-classification/blob/main/Resources/prediction_actual1.png)
 
     - __Create Scaled DataFrame:__ Construct a DataFrame with the scaled data, ensuring the "coin-id" is set as the index.
     ![Crypto Currency DataFrame](https://github.com/mjardinico/CryptoClustering/blob/main/Resources/crypto_dataframe1.png) 
