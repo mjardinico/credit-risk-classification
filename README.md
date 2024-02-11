@@ -25,6 +25,7 @@
 3. __Data Processing__  
 
     __Split the Data into Training and Testing Sets:__ 
+
     _Step 1:_ Read the `lending_data.csv` data from the Resources folder into a Pandas DataFrame.
 
     _Step 2:_ Create the labels set (y) from the “loan_status” column, and then create the features (X) DataFrame from the remaining columns.
@@ -35,6 +36,7 @@
     _Step 4:_ Split the data into training and testing datasets by using `train_test_split`.
 
     __Create a Logistic Regression Model with the Original Data__
+    git 
     _Step 1:_ Fit a logistic regression model by using the training data (X_train and y_train).
 
     _Step 2:_ Save the predictions on the testing data labels by using the testing feature data (X_test) and the fitted model.
