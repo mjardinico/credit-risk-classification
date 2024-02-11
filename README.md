@@ -64,7 +64,7 @@ The variable to be predicted is the `loan_status`. This is a binary variable whe
   * Recall for Actual 0 (non-default loans): 1.00
     * This indicates that the model is able to identify 100% of the actual non-default loans
 
-  ![Classification Report Using Original Data]()
+  ![Classification Report Using Original Data](https://github.com/mjardinico/credit-risk-classification/blob/main/Resources/balanced_accuracy_score1.png)
 
 
 * Machine Learning Model 2 (Using Resampled Data):
@@ -74,7 +74,8 @@ The variable to be predicted is the `loan_status`. This is a binary variable whe
   * Recall for Actual 1: 1.00
   * Recall for Actual 0: 1.00
 
-  ![Classification Report Using Resampled Data]()
+  ![Classification Report Using Resampled Data](https://github.com/mjardinico/credit-risk-classification/blob/main/Resources/balanced_accuracy_score2.png)
+  
 
 ### Summary
 
