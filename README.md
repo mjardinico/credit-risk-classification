@@ -18,7 +18,7 @@ The variable to be predicted is the `loan_status`. This is a binary variable whe
 
 ## Stages of the Machine Learning Process for this analysis.
 
-### 1. Data Splitting:###
+### 1. Data Splitting: 
 
 _Step 1:_ Read the `lending_data.csv` data from the Resources folder into a Pandas DataFrame.
 
@@ -31,7 +31,7 @@ _Step 3:_ Check the balance of the labels variable (y) by using the `value_count
 _Step 4:_ Split the data into training and testing datasets by using `train_test_split`.
 
     
-### 2. Model Creation, Testing and Evaluation:###
+### 2. Model Creation, Testing and Evaluation:
 
 _Step 1:_ Fit a logistic regression model by using the training data (X_train and y_train).
 
@@ -49,13 +49,13 @@ _Step 3:_ Evaluate the model’s performance by doing the following:
 _Step 4:_ Answer the following question.
 - Question: How well does the logistic regression model predict both the 0 (healthy loan) and 1 (high-risk loan) labels?
 
-### 3. Methods Used###
+### 3. Methods Used
 - Data Splitting
 - Logistic Regression including predictions
 - Calculate Accuracy Score and create Confusion Matrix
 
 
-### 4. Results###
+### 4. Results
 
 * Machine Learning Model 1 (Using Original Data):
   * Balanced Accuracy Score: 0.9443
