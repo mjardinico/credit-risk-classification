@@ -3,12 +3,17 @@
 * Submitted by:  Michael Jardinico
 * Date Submitted: Feb 10, 2024
 
-### Project Overview
-`This project uses various techniques to train and evaluate a model based on a loan risk. Utilizing historical data from a peer-to-peer lending company's lending activities, the goal is to construct a model capable of determining borrowers' creditworthiness. This README outlines the steps to set up and execute the project.`
-
 ### Working Files
 1. `credit_risk_classification.ipynb`
 2. `/Resources/lending_data.csv`
+
+### Overview of the Analysis
+This project involves assessing credit risk, a crucial aspect for financial institutions when determining the likelihood of a borrower defaulting on a loan. The dataset contains information relevant to this assessment, such as loan size, interest rate, borrower income, debt-to-income ratio, number of accounts, derogatory marks, total debt, and a binary loan status indicating whether the loan was paid or defaulted. The goal of your analysis is to predict the loan status (0 or 1, where 1 might indicate default) based on the other variables.
+
+### Variables to Predict
+The variable to be predicted is the `loan_status`. This is a binary variable where a value of 0 may indicate the loan was repaid, and 1 a default. Understanding the distribution of the variable `value_counts` is crucial to determine the balance or imbalance between repaid loans and defaults, impacting the preparation of the data and model it. (Refer to the following `value_counts` results based on the dataset)
+![loan_status result]()
+
     
 ### Instructions
 1. __GitHub Repository Setup:__
