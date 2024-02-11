@@ -12,7 +12,7 @@ This project involves assessing credit risk, a crucial aspect for financial inst
 
 ### Variables to Predict
 The variable to be predicted is the `loan_status`. This is a binary variable where a value of 0 may indicate the loan was repaid, and 1 a default. Understanding the distribution of the variable `value_counts` is crucial to determine the balance or imbalance between repaid loans and defaults, impacting the preparation of the data and model it. (Refer to the following `value_counts` results based on the dataset)
-![loan_status result]()
+![loan_status result](https://github.com/mjardinico/credit-risk-classification/blob/main/Resources/loan_status.png)
 
     
 ### Instructions
